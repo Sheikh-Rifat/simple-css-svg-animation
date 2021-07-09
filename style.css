@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 100px;
+    background-color: #B47E10;
+    
+}
+
+#right-wheel{
+    animation: wheel .8s infinite linear alternate 1s;
+}
+#left-wheel{
+    animation: left-wheel .8s infinite linear alternate 1s;
+}
+@keyframes wheel{
+    0% {
+        transform: translateY(-3px);
+     
+    }
+    100%{
+        transform: translateY(3px);
+    }
+}
+@keyframes left-wheel{
+    0% {
+        transform: translateY(3px);
+     
+    }
+    100%{
+        transform: translateY(-3px);
+    }
+}
+#path{
+    animation: path 1.2s infinite linear 1s;
+    position: relative;
+}
+@keyframes path{
+    0% {
+        transform: translateX(500px) ;
+     
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+#hair{
+    animation: hair 1s infinite linear alternate ;
+}
+
+@keyframes hair{
+    0% {
+        transform: translateY(-3px);
+     
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
